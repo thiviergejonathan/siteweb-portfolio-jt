@@ -1,26 +1,38 @@
+// créer un effet parallaxe
+// https://blog.logrocket.com/create-parallax-scrolling-css/
+    
+$marginBetweenSections: 15vh
+    
 *
     box-sizing: border-box
     font-family: sans-serif
 
 body
-    background-color: aliceblue
+    background-color: #333
 
 .container
-    width: 90%
-    max-width: 1200px
+    width: 75%
     margin: 0 auto
 
 header
     background-color: #999
-    height: 200px
+    height: 20vh
+
+h1
+    margin: 0
+    font-size: 2.5vw
+
+h2
+    font-size: 2vw
 
 section
     background-color: #99f
-    margin-top: 100px
-    min-height: 400px
+    margin-top: $marginBetweenSections
+    height: 40vh
 
 
 footer
     background-color: #999
-    height: 200px
-    margin-top: 100px
+    height: 20vh
+    margin-top: $marginBetweenSections
+    font-size: 2vw
